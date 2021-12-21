@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {margin: 0 auto; padding: 0 auto;}
+
+#wrap {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+img { border: 0; margin: 0;}
+
+#footerBox {
+    line-height: 80px;
+}
+
+#footerBox div {
+    background-color: #888888;
+    border: solid 1px #999999;
+    margin: 0;
+    color: black;
+    height: 90px;
+}
