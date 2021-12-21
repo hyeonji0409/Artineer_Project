@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#headerBox {
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    font-size: 18px;
+    
+}
+
+#logoBox {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+
+#logoImage {
+    width: 65px;
+    height: 65px;
+    padding: 5px;
+    margin-left: 10px;
+}

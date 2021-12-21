@@ -1,0 +1,64 @@
+ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* TOP MENU */
+#topMenuBox {
+    font-weight: bold;
+    padding-right: 10px;
+    background-color: rgba(51,51,51);
+}
+
+
+.topMenu {
+    display: inline-block;
+}
+
+#topMenuItem li {
+    display: inline-block;
+    line-height: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#topMenuItem li a {
+    text-decoration: none;
+    color: white;
+}
+
+#topMenu {
+    float: right;
+    line-height: 80px;
+}
+
+#topMenuJoin {
+    display: flex;
+}
+
+#topMenuJoin li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#topMenuJoin li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#bottomMenuBox li {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
+#bottomMenuBox li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ccc;
+}
+
