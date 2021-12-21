@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title> 자료실 </title>
+    <script src="js/jquery-3.6.0.min.js"></script> <!-- jquery가 먼저 와야 함 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="reference.js"></script>
+    <link rel="stylesheet" href="./reference.css">
+</head>
+
+<body>
+
+
+    <!-- container -->
+    <div id="container">
+
+        <div class="container_position">
+
+            <div class="containter_table">
+                <center>
+                    <div class="table_title">
+                        <center>
+                            <h1 style="color:rgba(51,51,51);">자료실</h1>
+                            <h3 style="color:rgba(51,51,51)mgray;">Reference</h3>
+                        </center>
+                    </div>
+
+                    <select class="select_mode" name="select_mode">
+                        <option value="7">최신순</option>
+                        <option value="6">C</option>
+                        <option value="5">C++</option>
+                        <option value="4">Python</option>
+                        <option value="3">java</option>
+                        <option value="2">Git</option>
+                        <option value="1">기타</option>
+                    </select>
+
+                    <!--글쓰기버튼-->
+                    <div class="write_button">
+                        <button id="table_write_btn" type="button"
+                            onclick="location.href='https://www.youtube.com/watch?v=ROvlW8KlKpE'">새글</button>
+                    </div>
+
+
+                    <table class="table" border="0.5" cellspacing="0">
+
+                        <caption>
+                        <colgroup>
+                            <col width=auto>
+                            <col width=400px>
+                            <col width=100px>
+                            <col width=100px>
+                            <col width=50o>
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">글쓴이</th>
+                                <th scope="col">날짜</th>
+                                <th scope="col">조회수</th>
+                            </tr>
+                        </thead>
+                        </caption>
+                        <tbody class="sub_news" border="1" cellspacing="0">
+
+
+                            <tr>
+                                <td>60</td>
+                                <td class="title">
+                                    <a href="#">c강의자료
+                                        <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">유정은</td>
+                                <td class="date">2021-05-29</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>59</td>
+                                <td class="title">
+                                    <a href="#">java강의자료4
+                                        <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">정현지</td>
+                                <td class="date">2021-04-09</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>58</td>
+                                <td class="title">
+                                    <a href="#">java강의자료3
+                                        <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">정현지</td>
+                                <td class="date">2021-04-09</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>57</td>
+                                <td class="title">
+                                    <a href="#">java강의자료2
+                                        <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">정현지</td>
+                                <td class="date">2021-04-07</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>56</td>
+                                <td class="title">
+                                    <a href="#">java강의자료1
+                                        <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">정현지</td>
+                                <td class="date">2021-04-07</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>55</td>
+                                <td class="title">
+                                    <a href="#">Python강의자료5 <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">고병채</td>
+                                <td class="date">2021-03-02</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>54</td>
+                                <td class="title">
+                                    <a href="#">Python강의자료4 <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">고병채</td>
+                                <td class="date">2021-03-02</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>53</td>
+                                <td class="title">
+                                    <a href="#">Python강의자료3 <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">고병채</td>
+                                <td class="date">2021-03-02</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>52</td>
+                                <td class="title">
+                                    <a href="#">Python강의자료2 <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">고병채</td>
+                                <td class="date">2021-03-02</td>
+                                <td class="hit"></td>
+                            <tr>
+                                <td>51</td>
+                                <td class="title">
+                                    <a href="#">Python강의자료1 <font color="black">(0)</font>
+                                    </a>
+                                </td>
+                                <td class="name">고병채</td>
+                                <td class="date">2021-03-02</td>
+                                <td class="hit"></td>
+                            </tr>
+
+
+                            <td colspan="5">
+
+                                <head>
+                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                                    <!--다국어 언어: UTF-8-->
+                                </head>
+
+                                <div class='list'>
+                                    <div class='before'><a style='color:rgba(51,51,51)'>◀</a></div><strong
+                                        style='color:rgba(51,51,51)'>
+                                        <a href=?_page=1> 1 </a></strong>&nbsp;<a href=?_page=2> 2
+                                    </a>&nbsp;&nbsp;
+                                    <a href=?_page=3> 3 </a>&nbsp;&nbsp;<a href=?_page=4> 4 </a>&nbsp;&nbsp;
+                                    <a href=?_page=5> 5 </a>&nbsp;&nbsp;<a href=?_page=6> 6 </a>&nbsp;&nbsp;
+                                    <div class='next'>
+                                        <a style='color:rgba(51,51,51)' href=?_page=6>▶</a>
+                                    </div>
+                                </div>
+                            </td>
+                            </tr>
+                        </tbody>
+                </center>
+                </table>
+
+                <table class="search_table">
+                    <form action="">
+                        <tr>
+
+                            <td>
+                                <select class="search_mode" name="search_mode">
+                                    <option value="3">제목+내용</option>
+                                    <option value="1">제목</option>
+                                    <option value="2">내용</option>
+                                </select>
+                            </td>
+                            <td class="search_text"><input type="text" name="search_text" size="10"></td>
+                            <td class="search_btn"><input type="submit" value="검색"></td>
+
+                        </tr>
+                    </form>
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
