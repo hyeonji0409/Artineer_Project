@@ -17,4 +17,5 @@ $(window).scroll(function () {
         // // if(scrollValue < 1399) {
         // //     $('#Major').fadeTo(1000, 1.0);
         // // }
+        
 });
