@@ -8,34 +8,49 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/reference.js"></script>
+    <script src="js/dropdown.js"></script>
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 
 <body>
 
     <div id="wrap">
-        <header>
+        <header id="headerBox">
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Notice</a></li>
-                        <li><a href="#">Activity</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li class="menu1">
+                            <a href="#">Notice</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">회의록</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">Activity</a>
+                            <ul class="sub">
+                                <li><a href="#">멘토링</a></li>
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="reference.html">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="topMenu">
+                <div class="topMenu" id="top_menu">
                     <ul id="topMenuJoin">
                         <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="#" onclick="openLogin();">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -197,18 +212,17 @@
 
                                 <td colspan="5">
 
-                                    <head>
-                                        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                                        <!--다국어 언어: UTF-8-->
-                                    </head>
-
                                     <div class='list'>
-                                        <div class='before'><a style='color:rgba(51,51,51)'>◀</a></div><strong
-                                            style='color:rgba(51,51,51)'>
-                                            <a href=?_page=1> 1 </a></strong>&nbsp;<a href=?_page=2> 2
-                                        </a>&nbsp;&nbsp;
-                                        <a href=?_page=3> 3 </a>&nbsp;&nbsp;<a href=?_page=4> 4 </a>&nbsp;&nbsp;
-                                        <a href=?_page=5> 5 </a>&nbsp;&nbsp;<a href=?_page=6> 6 </a>&nbsp;&nbsp;
+                                        <div class='before'>
+                                            <a style='color:rgba(51,51,51)'>◀</a>
+                                        </div>
+
+                                        <a href=?_page=1> 1 </a>&nbsp;&nbsp;
+                                        <a href=?_page=2> 2 </a>&nbsp;&nbsp;
+                                        <a href=?_page=3> 3 </a>&nbsp;&nbsp;
+                                        <a href=?_page=4> 4 </a>&nbsp;&nbsp;
+                                        <a href=?_page=5> 5 </a>&nbsp;&nbsp;
+
                                         <div class='next'>
                                             <a style='color:rgba(51,51,51)' href=?_page=6>▶</a>
                                         </div>

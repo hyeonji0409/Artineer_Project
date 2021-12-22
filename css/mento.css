@@ -1,0 +1,110 @@
+.mento_title{
+    width: 100%; 
+    height: 50px; 
+    padding: 0.5rem; 
+    margin-top:80px;
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+@media (max-width: 991px){
+ .mento-list {
+    width: 100%;
+}}
+
+ .mento-list{
+
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 0.5rem);
+    padding: 1px;
+    border: 2px solid #D7E2EB; 
+    margin-top: 100px;
+    border-radius: 0.25rem;
+    font-size: 15px;
+    flex-wrap: wrap;
+    padding: 0;
+} 
+
+
+
+ 
+
+
+ .part-box-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(51,51,51);;
+    padding: 0 4px 12px 4px;
+    border-bottom: 1px solid dimgray;
+    margin-bottom: 12px;
+
+} 
+
+
+.list-box {
+    float: left;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    margin-top: 0px;
+    top: 84px;
+    position: fixed;
+    text-align: left;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0 1px 0 0 #dedede;
+    padding: 30px; 
+}
+
+
+
+
+input[type="checkbox"]{
+    float: left;
+    width: 15px;
+    height: 15px;
+    
+  } 
+   
+  input[type="reset"]{
+    width: 105px;
+    height: 30px;
+    color: whitesmoke; 
+    background-color: rgba(51,51,51); 
+    border: 0;
+    text-align: center; 
+    }
+
+
+
+.image img.is-rounded {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+ .image img.is-rounded {
+    border-radius: 290486px;
+} 
+
+.button {
+    height: unset;
+    margin-right: 0;
+    padding: 1rem 0;
+    border-radius: 0 0 0.25rem 0.25rem;
+    border: solid #f1f3f5;
+    border-width: 1px 0 0;
+    font-size: 15px;
+    color: #000;
+
+}
+
+.before { 
+    float: left; 
+}
+.next { 
+    float: right;
+}
+.list{
+    padding: 15px;
+}

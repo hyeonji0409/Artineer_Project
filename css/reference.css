@@ -9,25 +9,23 @@
  }
 
 .select_mode{
-    position : static;
+    position: static;
     margin-right: 600px;
     width: 80px;
     height: 30px;
-    padding: 3px;
     border: 1; 
 
 }
 
 #table_write_btn {
     position: static;
-    /* top: 20px; */
     width: 80px;
     height: 30px;
     color: whitesmoke; 
     background-color: rgba(51,51,51); 
     border: 0; 
-    /* margin: 8px;  */
     margin-left:600px;
+    
     }
 
 #table_write_btn.hover{
@@ -113,6 +111,7 @@
     float: right;
 }
 .search_mode{
-    
+    position: center;
+    padding:15px;
     border-width: 0px;
 }
