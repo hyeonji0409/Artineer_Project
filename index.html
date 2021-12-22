@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/slideShow.js"></script>
+    <script src="js/gallery.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slideShow.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <title>Artineer</title>
-        <script type="text/javascript">
-            let joinButton = document.getElementById('join');
-            joinButton.onclick(showPopUp());
-            function showPopUp() {
-                window.open("join.html", "회원가입", "width=800, height=800, left=100, top=50");
-            }
-        </script>
+    <script type="text/javascript">
+        let joinButton = document.getElementById('join');
+        joinButton.onclick(showPopUp());
+        function showPopUp() {
+            window.open("join.html", "회원가입", "width=800, height=800, left=100, top=50");
+        }
+    </script>
 </head>
-
 <body>
     <div id="wrap">
         <header id="headerBox">
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Notice</a></li>
-                        <li><a href="reference.html">Activity</a></li>
+                        <li class="menu1">
+                            <a href="#">Notice</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">회의록</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">Activity</a>
+                            <ul class="sub">
+                                <li><a href="#">멘토링</a></li>
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="reference.html">자료실</a></li>
+                            </ul>
+                        </li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="topMenu">
+                <div class="topMenu" id="top_menu">
                     <ul id="topMenuJoin">
                         <li><a href="javascript:void(0);" id="join" onclick="showPopUp()">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="#" onclick="openLogin();">로그인</a></li>
                     </ul>
                 </div>
             </div>

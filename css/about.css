@@ -11,11 +11,10 @@ section {
 }
 
 body { /* 스크롤 안 보이게 */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    overflow-x: hidden
 }
 body::-webkit-scrollbar { /* 스크롤 안 보이게 */
-    display: none; /* Chrome, Safari, Opera*/
+    overflow-x: hidden
 }
 
 #GoalPic {

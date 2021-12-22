@@ -1,4 +1,4 @@
-#wrap {
-    display: flex;
-    justify-content: center;
+section {
+    margin: auto 0;
+    padding-top: 15rem;
 }
