@@ -1,0 +1,138 @@
+#ctg {
+    background-color: #f5f5f7;
+    height: 150px;
+    max-height: 150px;
+}
+
+.galleryInfo h1, h4{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.galleryInfo {
+    width: 1100px;
+    padding-top: 15px;
+}
+
+
+img {
+    width: 250px;
+}
+
+.gallerylist {
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+}
+
+.writeBtn {
+    max-width:1200px;
+    width:100%;
+    height: 40px;
+    padding: 3px;
+}
+
+#write_btn {
+    float: right;
+    margin-right: 12px;
+    margin-top: 5px;
+    width: 80px;
+    height: 30px;
+    background-color: #fff;
+    color: black;
+}
+
+.gallerylist > ul {font-size:0;}
+
+.gallerylist > ul > li {
+    display:inline-block;
+    vertical-align:
+    top;width:33.3%;}
+
+.gallerylist > ul > li > a {
+    display:block;
+    width:auto;
+    text-decoration: none;
+    margin:5px;}
+
+.gallerylist > ul > li > a .screen {
+    position:relative;
+    overflow:hidden;
+}
+
+.gallerylist > ul > li > a .screen .top {
+    position:absolute;
+    bottom:150%;
+    left:30px;
+    z-index:2;
+    color:#fff;
+    font-size:26px;
+    font-weight:900;
+    transition:all .35s;
+}
+
+.gallerylist > ul > li > a .screen .bottom {
+    position:absolute;
+    top:150%;
+    left:30px;
+    z-index:2;
+    color:#fff;
+    font-size:12px;
+    transition:all .35s;
+}
+
+.gallerylist > ul > li > a .screen img {width:100%;}
+
+.gallerylist > ul > li > a h3 {
+    font-size:14px;
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
+
+.gallerylist > ul > li > a .screen::after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index:1;
+    opacity:0;
+    transition:all .35s;
+}
+
+.gallerylist > ul > li > a:hover .top {bottom:52%;}
+.gallerylist > ul > li > a:hover .bottom {top:52%;}
+.gallerylist > ul > li > a:hover .screen::after {opacity:1;}
+
+
+.sub_news {
+    width: 250px;
+    text-align: center;
+}
+
+.pagination {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pagination ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.pagination li a{
+    text-decoration: none;
+    color: blue;
+}
+
+.search {
+    margin: 5px;
+}
