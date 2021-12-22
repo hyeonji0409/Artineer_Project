@@ -17,3 +17,7 @@ body { /* 스크롤 안 보이게 */
 body::-webkit-scrollbar { /* 스크롤 안 보이게 */
     display: none; /* Chrome, Safari, Opera*/
 }
+
+#GoalPic {
+    transform: scale(2.0);
+}

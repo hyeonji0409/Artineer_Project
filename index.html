@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
     <title>Artineer</title>
+        <script type="text/javascript">
+            let joinButton = document.getElementById('join');
+            joinButton.onclick(showPopUp());
+            function showPopUp() {
+                window.open("join.html", "회원가입", "width=800, height=800, left=100, top=50");
+            }
+        </script>
 </head>
 
 <body>
@@ -24,13 +31,13 @@
                     <ul id="topMenuItem">
                         <li><a href="about.html">About</a></li>
                         <li><a href="#">Notice</a></li>
-                        <li><a href="#">Activity</a></li>
+                        <li><a href="reference.html">Activity</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="topMenu" id="topMenu">
                     <ul id="topMenuJoin">
-                        <li><a href="#">회원가입</a></li>
+                        <li><a href="javascript:void(0);" id="join" onclick="showPopUp()">회원가입</a></li>
                         <li><a href="#">로그인</a></li>
                     </ul>
                 </div>
