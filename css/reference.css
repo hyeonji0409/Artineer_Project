@@ -1,4 +1,13 @@
 
+.table_title { 
+    width: 100%; 
+    height: 50px; 
+    padding: 10px; 
+    margin-top: 100px;
+    margin-bottom: 40px; 
+    text-align: center;
+ }
+
 .select_mode{
     position : static;
     margin-right: 600px;
@@ -6,13 +15,6 @@
     height: 30px;
     padding: 3px;
     border: 1; 
-    /* top: 20px;
-    width: 80px;
-    height: 30px;
-    padding: 3px;
-    border: 1; 
-    margin: none; 
-     */
 
 }
 
@@ -103,10 +105,7 @@
 
 }
 
-/* .list { 
-    width: 20%; 
-    margin: auto; 
-}  */
+
 .before { 
     float: left; 
 }
@@ -114,5 +113,6 @@
     float: right;
 }
 .search_mode{
+    
     border-width: 0px;
 }
