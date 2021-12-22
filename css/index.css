@@ -4,6 +4,7 @@
     height: 80px;
     line-height: 80px;
     padding: 0;
+    
 }
 
 #logoBox {
@@ -18,3 +19,27 @@
     padding: 5px;
     margin-left: 10px;
 }
+
+.project_link{
+    margin: 25px;
+}
+
+.project_link_info {
+    text-align: left;
+    max-width: 1200px;
+    margin-top: 10px;
+}
+
+.project_link_info a{
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.project_link_info h4{
+    margin: 5px;
+    margin-left: 10px;
+}
+

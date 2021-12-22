@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#slideShow {
+    position:relative;
+    background-color:#ffffff;
+    width: 100%;
+    height:200px;
+    line-height:200px;
+    border-bottom:solid #cccccc 1px;
+}
+
+#slideShowBox {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#slidePanel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.slideImage {
+    width: 100%;
+    float: left;
+    height: 200px;
+}
+
+/* prev / next 버튼 */
+
+#prevNextButtonBox {position: relative; z-index: 10;}
+
+#prevNextButtonBox img{width: 60px; height: 60px}
+
+#prevButton {position: absolute; top: 80px; left: 4%; opacity: 0.8; cursor: pointer;}
+#nextButton {position: absolute; top: 80px; right: 4%; opacity: 0.8; cursor: pointer;}
+
+#prevButton:hover {opacity: 1;}
+#nextButton:hover {opacity: 1;}

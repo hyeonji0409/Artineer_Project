@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/slideShow.js"></script>
+    <script src="js/gallery.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slideShow.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <title>Artineer</title>
 </head>
 
@@ -18,28 +24,166 @@
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Notice</a></li>
-                        <li><a href="#">Activity</a></li>
+                        <li class="menu1">
+                            <a href="#">Notice</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">회의록</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">Activity</a>
+                            <ul class="sub">
+                                <li><a href="#">멘토링</a></li>
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="reference.html">자료실</a></li>
+                            </ul>
+                        </li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="topMenu">
+                <div class="topMenu" id="top_menu">
                     <ul id="topMenuJoin">
                         <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="#" onclick="openLogin();">로그인</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-        <nav></nav>
+        <!-- 광고..? 넣어 말아... -->
         <section>
-            index Page
+            <!-- section -->
+            <article id="slideShow">
+                <!--슬라이드쇼-->
+                <!-- 이전 / 다음 버튼 -->
+                <div id="prevNextButtonBox">
+                    <img src="image/prevButton.png" id="prevButton">
+                    <img src="image/nextButton.png" id="nextButton">
+                </div>
+                <!-- 슬라이드쇼 이미지 -->
+                <div id="slideShowBox">
+                    <div id="slidePanel">
+                        <img src="image/img_slide_01.png" class="slideImage">
+                        <img src="image/img_slide_02.png" class="slideImage">
+                        <img src="image/img_slide_03.png" class="slideImage">
+                    </div>
+                </div>
+                <!--slideShowBox 끝-->
+            </article>
         </section>
+        <!-- 프로젝트 파일 연결 -->
+        <div class="project_link">
+            <div class="project_link_info">
+                <a href="project.css">프로젝트 구경하기 >></a>
+                <h4>다양하고 재미있는 프로젝트!!!</h4>
+            </div>
+            <div class="gallerylist">
+                <ul>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 자료실 -->
+        <div class="project_link">
+            <div class="project_link_info">
+                <a href="project.css">강의자료 보러가기 >></a>
+                <h4>스터디 시간에 공부한 자료들을 공유받아요</h4>
+            </div>
+            <div class="gallerylist">
+                <ul>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 활동 사진 -->
+        <div class="project_link">
+            <div class="project_link_info">
+                <a href="project.css">활동 사진 >></a>
+                <h4>경진대회, 강연, 전시회 참여 사진</h4>
+            </div>
+            <div class="gallerylist">
+                <ul>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <div class="screen">
+                                <div class="top">제목</div>
+                                <div class="bottom">부제목</div>
+                                <img src="image/1slide_img_01.png">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 공부할 수 있는 사이트 연결 -->
+
+
         <footer>
             <div id="footerBox">
                 <div id="bottomMenuBox">
