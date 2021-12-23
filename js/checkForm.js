@@ -113,6 +113,7 @@ window.addEventListener("keyup", () => {
 
 $(function(){	
     $(document).ready(function(){
+
         $('select[name=emailSelect]').change(function() {
 			if($(this).val()==""){
 				$('#email2').val("");
@@ -124,7 +125,7 @@ $(function(){
 		});
 
         $('#Submit').on('click', function() {
-            // 폼에서 입력 검증 후 다 맞으면 닫히게 해야 하는데..
+            window.open("login.html", "로그인", "width=400, height=450");
         });
         $('#Cancel').on('click', function() {
             window.close();
