@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artineer</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
     <link rel="stylesheet" href="css/login.css">
     <script src="js/checkForm.js"></script>
     <script src="js/login.js"></script>
@@ -31,12 +33,12 @@
                     <input placeholder="e-mail 또는 아이디 입력" id="id_input">
                 </div>
                 <div class="pwd_input">
-                    <input placeholder="비밀번호" type="password" id="pwd_input">
+                    <input placeholder="비밀번호" type="password" id="pwd_input" onkeyup=onKeyupPasswd(event)>
                 </div>
                 <button class="sign_in_button">로그인</button>
             </form>
             <!-- id / pw 찾기 -->
-            <div class="id_pw_search">
+            <div class=" id_pw_search">
                 <a href="#">아이디 / 비밀번호 찾기</a> &nbsp;
                 <a href="javascript:void(0);" id="join" onclick="showPopUp()">회원가입</a>
             </div>

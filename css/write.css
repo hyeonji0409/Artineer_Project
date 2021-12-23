@@ -1,4 +1,6 @@
-section {
-    margin: auto 0;
-    padding-top: 15rem;
+.writeform {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
 }

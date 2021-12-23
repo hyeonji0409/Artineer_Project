@@ -32,7 +32,7 @@
 
 .project_link_info a{
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -42,3 +42,106 @@
     margin: 5px;
     margin-left: 10px;
 }
+
+.index_screen img {
+    width: 100%;
+    height: 230px;
+}
+
+.index_galleylist {
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+}
+
+.select_mode {
+    width: 80px;
+    height: 30px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.writeBtn {
+    max-width:1200px;
+    width:100%;
+    height: 40px;
+    padding: 3px;
+}
+
+#write_btn {
+    float: right;
+    margin-right: 12px;
+    margin-top: 5px;
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+.index_galleylist > ul {font-size:0;}
+
+.index_galleylist > ul > li {
+    display:inline-block;
+    vertical-align:
+    top;width:25%;
+}
+
+.index_galleylist > ul > li > a {
+    display:block;
+    width:auto;
+    text-decoration: none;
+    margin:5px;}
+
+.index_galleylist > ul > li > a .index_screen {
+    position:relative;
+    overflow:hidden;
+}
+
+.index_galleylist > ul > li > a .index_screen .top {
+    position:absolute;
+    bottom:150%;
+    left:30px;
+    z-index:2;
+    color:#fff;
+    font-size:26px;
+    font-weight:900;
+    transition:all .35s;
+}
+
+.index_galleylist > ul > li > a .index_screen .bottom {
+    position:absolute;
+    top:150%;
+    left:30px;
+    z-index:2;
+    color:#fff;
+    font-size:12px;
+    transition:all .35s;
+}
+
+.index_galleylist > ul > li > a .index_screen img {width:100%;}
+
+.index_galleylist > ul > li > a h3 {
+    font-size:14px;
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
+
+.index_galleylist > ul > li > a .index_screen::after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index:1;
+    opacity:0;
+    transition:all .35s;
+}
+
+.index_galleylist > ul > li > a:hover .top {bottom:52%;}
+.index_galleylist > ul > li > a:hover .bottom {top:52%;}
+.index_galleylist > ul > li > a:hover .index_screen::after {opacity:1;}
