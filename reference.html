@@ -59,32 +59,32 @@
         <!-- container -->
         <div id="container">
 
-            <div class="container_position">
+            <div id="center">
 
                 <div class="containter_table">
                     <center>
                         <div class="table_title">
-                            <center>
-                                <h1 style="color:rgba(51,51,51);">자료실</h1>
-                                <h3 style="color:rgba(51,51,51)mgray;">Reference</h3>
-                            </center>
+
+                            <h1 style="color:rgba(51,51,51);">자료실</h1>
+                            <h3 style="color:rgba(51,51,51);">Reference</h3>
+
                         </div>
 
-                        <select class="select_mode" name="select_mode">
-                            <option value="7">최신순</option>
-                            <option value="6">C</option>
-                            <option value="5">C++</option>
-                            <option value="4">Python</option>
-                            <option value="3">java</option>
-                            <option value="2">Git</option>
-                            <option value="1">기타</option>
-                        </select>
+                        <div id="writeBtn">
+                            <!-- 카테고리 찾기 -->
+                            <select class="select_ctg" name="select_ctg">
+                                <option value="7">최신순</option>
+                                <option value="6">C/C++</option>
+                                <option value="5">Python</option>
+                                <option value="4">JAVA</option>
+                                <option value="3">javascript</option>
+                                <option value="2">Git</option>
+                            </select>
 
-                        <!--글쓰기버튼-->
-                        <div class="write_button">
-                            <button id="table_write_btn" type="button"
-                                onclick="location.href='https://www.youtube.com/watch?v=ROvlW8KlKpE'">새글</button>
+                            <!-- 글쓰기 버튼 -->
+                            <button id="write_btn">새 글</button>
                         </div>
+
 
 
                         <table class="table" border="0.5" cellspacing="0">
@@ -254,6 +254,7 @@
                 </div>
 
             </div>
+
             <footer>
                 <div id="footerBox">
                     <div id="bottomMenuBox">
