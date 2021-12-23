@@ -8,6 +8,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/reference.js"></script>
+    <script src="js/dropdown.js"></script>
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
@@ -18,29 +19,41 @@
 <body>
 
     <div id="wrap">
-        <header>
+        <header id="headerBox">
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Notice</a></li>
-                        <li><a href="#">Activity</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li class="menu1">
+                            <a href="#">Notice</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">회의록</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">Activity</a>
+                            <ul class="sub">
+                                <li><a href="#">멘토링</a></li>
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="reference.html">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="topMenu">
+                <div class="topMenu" id="top_menu">
                     <ul id="topMenuJoin">
                         <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="#" onclick="openLogin();">로그인</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-
 
         <!-- container -->
         <div id="container">
