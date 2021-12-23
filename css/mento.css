@@ -2,15 +2,20 @@
     width: 100%; 
     height: 50px; 
     padding: 0.5rem; 
-    margin-top:80px;
+    margin-top:100px;
     margin-bottom: 40px; 
     text-align: center;
+}
+
+#mentoring{
+    margin-top: 30px;
 }
 
 @media (max-width: 991px){
  .mento-list {
     width: 100%;
 }}
+
 
 .mento-list{
 
@@ -35,10 +40,6 @@
     margin-bottom: 12px;
 
 } 
-ul, ol, li {
-    list-style: none;
-}
-
 
 .list-box {
     float: left;
@@ -51,6 +52,8 @@ ul, ol, li {
     background-color: rgb(228, 228, 228);
     box-shadow: 0 1px 0 0 #dedede;
     padding: 30px; 
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 

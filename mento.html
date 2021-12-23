@@ -8,6 +8,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/reference.js"></script>
+    <script src="js/dropbox.js"></script>
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
@@ -19,24 +20,37 @@
 <body>
 
     <div id="wrap">
-        <header>
+        <header id="headerBox">
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Notice</a></li>
-                        <li><a href="#">Activity</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li class="menu1">
+                            <a href="#">Notice</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">회의록</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">Activity</a>
+                            <ul class="sub">
+                                <li><a href="mento.html">멘토링</a></li>
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="reference.html">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="topMenu">
+                <div class="topMenu" id="top_menu">
                     <ul id="topMenuJoin">
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="javascript:void(0);" id="join" onclick="showPopUp()">회원가입</a></li>
+                        <li><a href="#" onclick="openLogin();">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,10 +60,8 @@
         <main id="main">
             <section class="instructor_list_section">
                 <div class="mento_title">
-                    <center>
-                        <h1 style="color:rgba(51,51,51);">멘토링</h1>
-                        <h3 style="color:dimgray">당신의 멘토를 찾아라!</h3>
-                    </center>
+                    <h1 style="color:rgba(51,51,51);" id="mentoring">멘토링</h1>
+                    <h3 style="color:dimgray">당신의 멘토를 찾아라!</h3>
                 </div>
 
 
