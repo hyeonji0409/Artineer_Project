@@ -21,20 +21,33 @@
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Notice</a></li>
-                        <li><a href="#">Activity</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="menu1">
+                            <a href="#">Notice</a>
+                            <ul class="sub">
+                                <li><a href="notice.html">공지사항</a></li>
+                                <li><a href="meeting_note.html">회의록</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">Activity</a>
+                            <ul class="sub">
+                                <li><a href="mento.html">멘토링</a></li>
+                                <li><a href="project.html">프로젝트</a></li>
+                                <li><a href="reference.html">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="topMenu">
+                <div class="topMenu" id="top_menu">
                     <ul id="topMenuJoin">
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
+                        <li><a href="javascript:void(0);" id="join" onclick="showPopUp()">회원가입</a></li>
+                        <li><a href="#" id="index_login">로그인</a></li>
                     </ul>
                 </div>
             </div>
