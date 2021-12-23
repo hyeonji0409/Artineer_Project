@@ -46,12 +46,52 @@ window.onload = function() {
             return false;
         } // 비밀번호와 비밀번호 확인이 일치하는지 검사
         if(password.value.length < 8 || password.value.length > 20) { // 글자 수 검사
-
             alert("비밀번호는 8~20자로 입력하세요.");
-            id.focus();
-            id.value = "";
+            password.focus();
+            password.value = "";
             return false;
         } // 비밀번호 길이 검증
+
+        var birthYear = document.getElementById('birthYear');
+        if(birthYear.value == "") {
+            alert("생년월일을 입력해 주세요.");
+            birthYear.focus();
+            birthYear.value = "";
+            return false;
+        }
+        if(birthYear.value.length > 4) {
+            alert("생년월일을 올바르게 입력해 주세요.");
+            birthYear.focus();
+            birthYear.value = "";
+            return false;
+        }
+
+        var hp2 = document.getElementById('hp2');
+        var hp3 = document.getElementById('hp3');
+        if(hp2.value == "" || hp3.value == "") {
+            alert("휴대폰번호 입력 양식이 정확하지 않습니다.");
+            hp2.focus();
+            return false;
+        }
+        if(hp2.value.length > 4 || hp3.value.length > 4) {
+            alert("휴대폰번호 입력 양식이 정확하지 않습니다.");
+            email1.focus();
+            return false;
+        }
+
+        var zipcode = document.getElementById('zipcode');
+        if(zipcode.value == "") {
+            alert("주소를 검색해 주세요.");
+            zipcode.focus();
+            return false;
+        }
+
+        var address2 = document.getElementById('address2');
+        if(address2.value == "") {
+            alert("상세 주소를 입력해 주세요.");
+            address2.focus();
+            return false;
+        }
 
         // 관심분야를 선택하지 않은 경우 검사
         var job = document.getElementById('job');
@@ -60,10 +100,19 @@ window.onload = function() {
             return false;
         } // 관심분야 선택 검사 완료
 
+        var email1 = document.getElementById('email1');
+        var email2 = document.getElementById('email2');
+        if(email1.value == "" || email2.value == "") {
+            alert("이메일 입력 양식이 정확하지 않습니다.");
+            email1.focus();
+            return false;
+        }
+
         // radio 버튼 검사.
         // radio 버튼의 경우 id 속성을 사용하지 않고 그룹 이름인 name 속성 사용
         // 동일 그룹에 속한 여러 라디오 버튼(객체)는 동일한 name : 배열로 처리
         // 체크 여부를 저장할 변수 선언
+
         var chk = false;
         for(var i = 0; i < joinForm.emailRcv.length; i++) {
             if(joinForm.emailRcv[i].checked == true) {
@@ -75,16 +124,6 @@ window.onload = function() {
             alert("이메일 수신 여부를 선택해 주세요.")
             return false;
         }  // radio 버튼 검사 끝.
-
-        // 체크박스를 하나도 선택하지 않은 경우 검사
-        // var agreement1 = document.getElementById('agreement1');
-        // var agreement2 = document.getElementById('agreement2');
-        // if(agreement1.checked == false && agreement2.checked == false) {
-        //     alert("두 약관 중 하나의 약관이라도 동의해 주세요.")
-        //     return false;
-        // }
-
-        
 
     }; // onsubmit 끝
 
@@ -124,7 +163,28 @@ $(function(){
 			}
 		});
         $('#Submit').on('click', function() {
+            if($('#name').value == "" || 
+            $('#id').value == "" ||  
+            $('#id').value.length < 6 || 
+            $('#id').value.length > 12 || 
+            $('#password').value == "" || 
+            $('#passwordCheck').value == "" || 
+            $('#password').value != $('#passwordCheck').value ||
+            $('#password').value.length < 8 || $('#password').value.length > 20 || 
+            $('#birthYear').value == "" ||
+            $('#hp2').value == "" || $('#hp3').value == "" ||
+            $('#hp2').value.length > 4 || $('#hp3').value.length > 4 ||
+            $('#zipcode').value == "" || 
+            $('#address2').value == "" ||
+            $('#job').value == "" || 
+            $('#email1').value == "" || $('#email2').value == "" ||
+            $(':radio[name="emailRcv"]:checked').length < 1) {
+                alert("정보가 올바르지 않습니다. <br> 다시 확인해 주세요.")
+                event.preventDefault();
+            }
+            else {
             window.open("login.html", "로그인", "width=400, height=450");
+            }
         });
         $('#Cancel').on('click', function() {
             window.close();
