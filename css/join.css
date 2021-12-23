@@ -25,3 +25,13 @@ body::-webkit-scrollbar { /* 스크롤 안 보이게 */
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15) 
 }
 
+.header__logo {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+.header__logo h1 {
+    padding-top: 1%;
+    padding-left: 1%;
+}
