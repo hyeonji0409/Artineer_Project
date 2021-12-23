@@ -8,7 +8,6 @@ window.onload = function() {
         if(name.value == "") {
             alert("성명을 입력하세요.");
             name.focus();
-
             return false; // 서버로 전송되지 않게 함.
         } // 이름 검증 끝
 
@@ -18,7 +17,6 @@ window.onload = function() {
             id.focus();
             return false;
         } // 아이디 입력 됐는지 검사
-
         if(id.value.length < 6 || id.value.length > 12) { // 글자 수 검사
             alert("아이디는 6~12자로 입력하세요.");
             id.focus();
@@ -47,8 +45,8 @@ window.onload = function() {
             passwordCheck = "";
             return false;
         } // 비밀번호와 비밀번호 확인이 일치하는지 검사
-
         if(password.value.length < 8 || password.value.length > 20) { // 글자 수 검사
+
             alert("비밀번호는 8~20자로 입력하세요.");
             id.focus();
             id.value = "";
@@ -105,7 +103,9 @@ window.onload = function() {
 window.addEventListener("keyup", () => {
     var hp2 = document.getElementById('hp2');
     var hp3 = document.getElementById('hp3');
+
     if(hp2.value.length == 4 && hp3.value.length == 0) {
+
         hp3.focus();
     } // 휴대폰 번호 중간 입력하면 다음 칸으로 포커스
   });
@@ -123,7 +123,6 @@ $(function(){
 				$("#email2").attr("readonly", true);
 			}
 		});
-
         $('#Submit').on('click', function() {
             window.open("login.html", "로그인", "width=400, height=450");
         });
