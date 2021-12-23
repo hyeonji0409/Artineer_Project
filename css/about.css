@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+section {
+    background-color: rgb(235, 235, 237);
+}
+
+body { /* 스크롤 안 보이게 */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar { /* 스크롤 안 보이게 */
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+#GoalPic {
+    transform: scale(2.0);
+}

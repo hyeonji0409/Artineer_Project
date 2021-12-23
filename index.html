@@ -5,13 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
     <title>Artineer</title>
+        <script type="text/javascript">
+            let joinButton = document.getElementById('join');
+            joinButton.onclick(showPopUp());
+            function showPopUp() {
+                window.open("join.html", "회원가입", "width=800, height=800, left=100, top=50");
+            }
+        </script>
 </head>
 
 <body>
-    제가,.,,보이시나요...?
-    rhqudco
-    rhqudco2
+    <div id="wrap">
+        <header id="headerBox">
+            <!-- header -->
+            <div id="logoBox">
+                <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
+            </div>
+            <div id="topMenuBox">
+                <div class="topMenu">
+                    <ul id="topMenuItem">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="reference.html">Activity</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="topMenu" id="topMenu">
+                    <ul id="topMenuJoin">
+                        <li><a href="javascript:void(0);" id="join" onclick="showPopUp()">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav></nav>
+        <section>
+            index Page
+        </section>
+        <footer>
+            <div id="footerBox">
+                <div id="bottomMenuBox">
+                    <ul id="bottomMenuItem">
+                        <li><a href="#">© 2018. ARTINEER</a></li>
+                        <li><a href="#">Design. ARTINEER</a></li>
+                        <li><a href="#">Development. ARTINEER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
