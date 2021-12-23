@@ -1,49 +1,60 @@
-
-<<<<<<< HEAD
-.table_title {
-
+/* 
+#wrap{
     width: 100%;
-    height: 50px; 
-    padding: 10px;
-    /* margin-bottom: 40px; */
-    margin-top:110px; 
-    text-align: center; 
-    }
-.table_title h1 { color: rgba(51,51,51) }
-.table_title h3 { color : #e2e2e2; font-size: 15px; font-weight: 400; }
-=======
+    height: 100%;
+    margin:0 auto;
+    background-color: #f5f5f7;
+    border: 2px solid red;
+    
+} */
+#center{
+    width: 100%;
+    height: 900px;
+    margin:0 auto;
+    background-color:#f5f5f7; 
+
+
+}
+
 .table_title { 
     width: 100%; 
-    height: 50px; 
+    height: 100%; 
     padding: 10px; 
     margin-top: 100px;
     margin-bottom: 40px; 
     text-align: center;
+    
  }
->>>>>>> jay
 
-.select_mode{
-    position: static;
-    margin-right: 600px;
+
+ .select_ctg {
     width: 80px;
     height: 30px;
-    border: 1; 
-
+   float: left;
+    margin-left: 12px;
+    margin-top: 5px;
+    
 }
 
+ #writeBtn {
+    width: 750px;
+    height: 40px;
+    padding: 3px;
+    
+}
 
-#table_write_btn {
-    position: static;
+#write_btn {
+    float: right;
+    margin-right: 12px;
+    margin-top: 5px;
     width: 80px;
     height: 30px;
-    color: whitesmoke; 
-    background-color: rgba(51,51,51); 
-    border: 0; 
-    margin-left:600px;
+    background-color:rgba(51,51,51);
+    color: white;
     
-    }
+}
 
-#table_write_btn.hover{
+#write_btn.hover{
     background-color: gray;
 
     }
@@ -53,6 +64,7 @@
 .sub_news, .sub_news th, .sub_news td { 
     border: 0; 
     }
+
 .sub_news a { 
     color: rgba(51,51,51); 
     text-decoration: none; 
@@ -61,6 +73,7 @@
 .sub_news a:hover { 
     color: gray; 
 }
+
 .sub_news { 
     width: 100%; 
     border-bottom: 1px solid rgba(51,51,51); 
@@ -95,7 +108,7 @@
     position: relative;
     left: 0px;
     top: 20px;
-
+    
 }
 
 .search_table{
@@ -115,6 +128,7 @@
     align-items: center;
     width: 20%; 
     margin: auto;
+    
 
 }
 
@@ -130,5 +144,7 @@
     position: center;
     padding:15px;
     border-width: 0px;
+    background-color: #f5f5f7;
+
   
 }

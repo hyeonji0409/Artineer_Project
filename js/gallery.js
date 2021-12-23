@@ -9,4 +9,7 @@ $(function () {
         _this.removeClass('hover');
     });
 
+    $(".project_link_info a").mouseover(function () { $(this).css("color", "blue"); })
+    $(".project_link_info a").mouseleave(function () { $(this).css("color", "black"); })
+
 });

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#table_write_btn').on('click', function (e) {
+    $('#write_btn').on('click', function (e) {
     }).mouseenter(function (e) {
         var _this = $(this);
         _this.addClass('hover');
