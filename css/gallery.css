@@ -15,8 +15,14 @@
 }
 
 
-img {
+.screen img {
     width: 250px;
+    height: 220px;
+}
+
+.index_screen img {
+    width: 230px;
+    height: 230px;
 }
 
 .gallerylist {
@@ -50,12 +56,19 @@ img {
     color: white;
 }
 
+#write_btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .gallerylist > ul {font-size:0;}
 
 .gallerylist > ul > li {
     display:inline-block;
     vertical-align:
-    top;width:33.3%;}
+    top;width:33.3%;
+}
 
 .gallerylist > ul > li > a {
     display:block;
