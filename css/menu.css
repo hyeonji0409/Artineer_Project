@@ -47,7 +47,7 @@ ul {
 .sub {
     display: none;
     position: absolute;
-    background-color: #ccc;
+    background-color: rgba(61, 61, 61, 0.781);
     z-index: 1;
     opacity: 0.8;
     top: 80px;

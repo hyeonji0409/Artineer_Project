@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/gallery.js"></script>
-    <script src="js/dropdown.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -22,33 +21,20 @@
             <!-- header -->
             <div id="logoBox">
                 <a href="index.html"><img src="image/logo.png" id="logoImage"></a>
-
             </div>
             <div id="topMenuBox">
                 <div class="topMenu">
                     <ul id="topMenuItem">
-                        <li><a href="about.html">About</a></li>
-                        <li class="menu1">
-                            <a href="#">Notice</a>
-                            <ul class="sub">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">회의록</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu1"><a href="#">Activity</a>
-                            <ul class="sub">
-                                <li><a href="#">멘토링</a></li>
-                                <li><a href="#">프로젝트</a></li>
-                                <li><a href="reference.html">자료실</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">Activity</a></li>
+                        <li><a href="#">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="topMenu" id="top_menu">
+                <div class="topMenu" id="topMenu">
                     <ul id="topMenuJoin">
                         <li><a href="#">회원가입</a></li>
-                        <li><a href="#" onclick="openLogin();">로그인</a></li>
+                        <li><a href="#">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,8 +43,8 @@
         <section>
             <div id="ctg">
                 <div class="galleryInfo">
-                    <h1>Gallery</h1>
-                    <h4>Artineer 활동사진 입니다</h4>
+                    <h1>Project</h1>
+                    <h4>만든 작품들을 공유해보세요</h4>
                 </div>
             </div>
         </section>
@@ -69,6 +55,10 @@
             <select class="select_mode" name="select_mode">
                 <option value="7">최신순</option>
                 <option value="6">오래된순</option>
+                <option value="5">Web</option>
+                <option value="4">Android</option>
+                <option value="3">게임</option>
+                <option value="2">기타</option>
             </select>
 
             <!-- 글쓰기 버튼 -->

@@ -1,4 +1,27 @@
 
+<<<<<<< HEAD
+.table_title {
+
+    width: 100%;
+    height: 50px; 
+    padding: 10px;
+    /* margin-bottom: 40px; */
+    margin-top:110px; 
+    text-align: center; 
+    }
+.table_title h1 { color: rgba(51,51,51) }
+.table_title h3 { color : #e2e2e2; font-size: 15px; font-weight: 400; }
+=======
+.table_title { 
+    width: 100%; 
+    height: 50px; 
+    padding: 10px; 
+    margin-top: 100px;
+    margin-bottom: 40px; 
+    text-align: center;
+ }
+>>>>>>> jay
+
 .select_mode{
     position : static;
     margin-right: 600px;
@@ -6,15 +29,9 @@
     height: 30px;
     padding: 3px;
     border: 1; 
-    /* top: 20px;
-    width: 80px;
-    height: 30px;
-    padding: 3px;
-    border: 1; 
-    margin: none; 
-     */
 
 }
+
 
 #table_write_btn {
     position: static;
@@ -103,16 +120,16 @@
 
 }
 
-/* .list { 
-    width: 20%; 
-    margin: auto; 
-}  */
+
 .before { 
     float: left; 
 }
 .next { 
-    float: right;
+    float: right; 
+   
 }
 .search_mode{
+    
     border-width: 0px;
+  
 }
