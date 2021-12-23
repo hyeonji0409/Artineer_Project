@@ -1,0 +1,56 @@
+.login_wrap {
+    display: flex;
+    justify-content: center;
+}
+body{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.login_container{
+    width: 400px;
+    height: 450px;
+    text-align: center;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+
+
+#logo {
+    font-size: 40px;
+    padding-right: 10px;
+    padding-top: 13px;
+}
+
+.sign_in_container {
+    margin: 30px;
+}
+
+
+#id_input, #pwd_input {
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+}
+
+.sign_in_button {
+    width: 310px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.id_pw_search {
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}

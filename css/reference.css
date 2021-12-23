@@ -1,4 +1,17 @@
 
+<<<<<<< HEAD
+.table_title {
+
+    width: 100%;
+    height: 50px; 
+    padding: 10px;
+    /* margin-bottom: 40px; */
+    margin-top:110px; 
+    text-align: center; 
+    }
+.table_title h1 { color: rgba(51,51,51) }
+.table_title h3 { color : #e2e2e2; font-size: 15px; font-weight: 400; }
+=======
 .table_title { 
     width: 100%; 
     height: 50px; 
@@ -7,6 +20,7 @@
     margin-bottom: 40px; 
     text-align: center;
  }
+>>>>>>> jay
 
 .select_mode{
     position: static;
@@ -16,6 +30,7 @@
     border: 1; 
 
 }
+
 
 #table_write_btn {
     position: static;
@@ -108,10 +123,12 @@
     float: left; 
 }
 .next { 
-    float: right;
+    float: right; 
+   
 }
 .search_mode{
     position: center;
     padding:15px;
     border-width: 0px;
+  
 }

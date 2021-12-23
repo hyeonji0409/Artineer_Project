@@ -12,7 +12,7 @@
     width: 100%;
 }}
 
- .mento-list{
+.mento-list{
 
     display: flex;
     justify-content: center;
@@ -26,11 +26,6 @@
     padding: 0;
 } 
 
-
-
- 
-
-
  .part-box-title {
     font-size: 25px;
     font-weight: bold;
@@ -40,6 +35,9 @@
     margin-bottom: 12px;
 
 } 
+ul, ol, li {
+    list-style: none;
+}
 
 
 .list-box {
@@ -54,8 +52,6 @@
     box-shadow: 0 1px 0 0 #dedede;
     padding: 30px; 
 }
-
-
 
 
 input[type="checkbox"]{
