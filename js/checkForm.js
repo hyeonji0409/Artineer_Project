@@ -152,7 +152,6 @@ window.addEventListener("keyup", () => {
 
 $(function(){	
     $(document).ready(function(){
-
         $('select[name=emailSelect]').change(function() {
 			if($(this).val()==""){
 				$('#email2').val("");
@@ -162,28 +161,27 @@ $(function(){
 				$("#email2").attr("readonly", true);
 			}
 		});
-        $('#Submit').on('click', function() {
+        $('input[type="submit"]').on('click', function() {
             if($('#name').value == "" || 
-            $('#id').value == "" ||  
-            $('#id').value.length < 6 || 
-            $('#id').value.length > 12 || 
-            $('#password').value == "" || 
-            $('#passwordCheck').value == "" || 
-            $('#password').value != $('#passwordCheck').value ||
-            $('#password').value.length < 8 || $('#password').value.length > 20 || 
-            $('#birthYear').value == "" ||
-            $('#hp2').value == "" || $('#hp3').value == "" ||
-            $('#hp2').value.length > 4 || $('#hp3').value.length > 4 ||
-            $('#zipcode').value == "" || 
-            $('#address2').value == "" ||
-            $('#job').value == "" || 
-            $('#email1').value == "" || $('#email2').value == "" ||
-            $(':radio[name="emailRcv"]:checked').length < 1) {
-                alert("정보가 올바르지 않습니다. <br> 다시 확인해 주세요.")
-                event.preventDefault();
+                $('#id').value == "" ||  
+                ($('#id').value.length < 6 || $('#id').value.length > 12) || 
+                $('#password').value == "" || 
+                $('#passwordCheck').value == "" || 
+                ($('#password').value != $('#passwordCheck').value) ||
+                ($('#password').value.length < 8 || $('#password').value.length > 20) || 
+                $('#birthYear').value == "" ||
+                ($('#hp2').value == "" || $('#hp3').value == "") ||
+                ($('#hp2').value.length > 4 || $('#hp3').value.length > 4) ||
+                $('#zipcode').value == "" || 
+                $('#address2').value == "" ||
+                $('#job').value == "" || 
+                ($('#email1').value == "" || $('#email2').value == "") ||
+                $(':radio[name="emailRcv"]:checked').length < 1) {
+                    alert("정보가 올바르지 않습니다. <br> 다시 확인해 주세요.");
+                    event.preventDefault();
             }
             else {
-            window.open("login.html", "로그인", "width=400, height=450");
+                window.open("login.html", "로그인", "width=400, height=450");
             }
         });
         $('#Cancel').on('click', function() {

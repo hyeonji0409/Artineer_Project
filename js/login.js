@@ -22,6 +22,12 @@ $(function () {
 
 });
 
+let joinButton = document.getElementById('join');
+joinButton.onclick(showPopUp());
+function showPopUp() {
+    window.open("join.html", "회원가입", "width=800, height=800, left=100, top=50");
+}
+
 function onKeyupPasswd(ev) {
     var evKeyup = null;
 
